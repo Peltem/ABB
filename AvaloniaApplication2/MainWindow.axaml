@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.MainWindow"
+        Title="AvaloniaApplication2">
+    <Grid>
+        <DataGrid Name="BookGrid" x:CompileBindings="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding BookID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Название книги" Binding="{Binding BookName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество" Binding="{Binding Kol}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
